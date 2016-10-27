@@ -1,17 +1,28 @@
 body {
-    background-color: rgb(132,255,255);
+    background-blend-mode: color-burn;
     font-family: monospace;
-    color: darkslateblue;
-    
+    background-image: url("images/jazzcup.jpg");
+    opacity: 0.9;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
   list-style: none;
+  margin: 0px;
+  border: 0px;
+  padding: 40px;
+  font-size: 110%;
 }
-
 
 .primary {
   background-color: rgb(132,255,255);
+  opacity: 0.9;
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -19,14 +30,15 @@ ul {
 
 .secondary {
   background-color:hotpink;
+  opacity: 0.9;
   margin: 0px;
   padding: 40px;
-  border: 0px;
- 
+  border: 0px 
 }
 
 .tertiary {
   background-color:mediumpurple;
+  opacity: 0.9;
   margin: 0px;
   padding: 40px;
   border: 4px;
