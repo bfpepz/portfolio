@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(132,255,255);
+    font-family: monospace;
+    color: darkslateblue;
+    
+}
+
+ul {
+  list-style: none;
+}
+
+
+.primary {
+  background-color: rgb(132,255,255);
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.secondary {
+  background-color:hotpink;
+  margin: 0px;
+  padding: 40px;
+  border: 0px;
+ 
+}
+
+.tertiary {
+  background-color:mediumpurple;
+  margin: 0px;
+  padding: 40px;
+  border: 4px;
+}
+
+.copyright {
+  font-size: 8px;
+}
+
+.blogdates {
+  color: black;
+  font-size: 120%;
+}

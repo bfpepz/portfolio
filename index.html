@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="portfoliologo.ico" />`
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
     <title>Brendan Peppler Internetz</title>
   
   </head>
@@ -12,10 +13,10 @@
   <body>
     
     <header>
-      <a href="index.html"><img src="http://i.imgur.com/wvntUry.png"></a> 
+      <a href="index.html"><img src="images/brendanpepplerinternetz.png"></a> 
     </header>
     
-    <nav>
+    <nav class="primary">
       <ul>
         <li><a href="index.html">Home</a></li>
         <br>
@@ -27,27 +28,33 @@
       </ul>
     </nav>
     
-    <hr>
+   
     
-    <section>
+    <section class="secondary">
       <h2>Blog</h2>
+      
       <article>
      
-        <time datetime="2016-10-19">October 19th</time>
+        <time class="blogdates" datetime="2016-10-27">October 27th</time>
+        <p>Well look who got a little fancy. I added an external CSS stylesheet. Digging the monotype font-fam, although anything beats Times New Roman. Excited to continue putting the pieces together on this web design journey. </p>
+      </article>
+      
+      
+      <article>
+     
+        <time class="blogdates" datetime="2016-10-19">October 19th</time>
         <p>This is a work in progress. This is a barebones HTML5-only site, with an emphasis on using semantic tags. <time datetime="2016-10-20">Tommorow,</time> styling will be added via CSS. I will continue to regularly upload new projects and other nifty things from my web design course at UW PCE. </p>
       </article>
     </section>
     
-    <hr>
-    
-    <footer>
+    <footer class="tertiary">
       <h2>Social Media</h2>
         <ul>
           <li><a href="https://www.linkedin.com/in/brendanpeppler">LinkedIn</a></li>
           <li><a href="https://www.facebook.com/nadnerb.pepper">Facebook</a></li>
           <li><a href="https://twitter.com/bfpepz">Twitter</a></li>
         </ul>
-      <p><em>&copy;Brendan Peppler, 2016.</em></p>
+      <p class="copyright"><em>&copy;Brendan Peppler, 2016.</em></p>
     </footer>
     
   </body>
