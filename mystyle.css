@@ -1,6 +1,6 @@
 body {
     background-blend-mode: color-burn;
-    font-family: monospace;
+    font-family: 'Cutive Mono', monospace;
     background-image: url("images/jazzcup.jpg");
     opacity: 0.9;
     margin: 0px;
@@ -20,12 +20,25 @@ ul {
   font-size: 110%;
 }
 
+header {
+  width: 100%;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: blue;
+  font-size: 150%;
+}
+
+.social-media li {
+  display: inline; 
+  padding: 5rem;
+}
+
 .primary {
   background-color: rgb(132,255,255);
   opacity: 0.9;
   margin: 0px;
   padding: 0px;
-  border: 0px;
+  border: 0px; 
 }
 
 .secondary {
@@ -34,6 +47,10 @@ ul {
   margin: 0px;
   padding: 40px;
   border: 0px 
+}
+
+.dialup-connection {
+  height: 10%; 
 }
 
 .tertiary {
