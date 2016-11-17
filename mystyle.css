@@ -28,7 +28,6 @@ header img {
   transition-delay: 3s; 
 }
 
-
 header {
   width: 100%;
   font-family: 'Permanent Marker', cursive;
@@ -42,7 +41,9 @@ header {
   padding: 5rem;
 }
 
-.primary {
+
+
+.primary  {
   background-color: rgb(132,255,255);
   opacity: 0.9;
   margin: 0px;
@@ -50,6 +51,29 @@ header {
   border: 0px; 
 }
 
+article {
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+}
+
+article:hover {
+  font-weight:900;  
+  
+} 
+
+h1 {
+-webkit-transition: all 2s ease;
+-moz-transition: all 2s ease;
+-o-transition: all 2s ease;
+-ms-transition: all 2s ease;
+}
+
+h1:hover {
+  background-image: url(images/timtaylor.jpg);
+  font-size: 600%; 
+}
 .secondary {
   background-color:hotpink;
   opacity: 0.9;
@@ -82,36 +106,37 @@ header {
 /* BIG WILLY STYLES */ 
 
 .bigwillybackground {
-  background-image: none;
-}
-
-#bigwillypic1 {
-  transform: rotate(360deg)
+  background-image: url(images/willsmithbackground.jpg);
+  background-image: radial-gradient(circle);
+  
 }
 
 #bigwillyheader {
-  font-size: 200%;
+  font-size: 250%;
   text-align: center;
-  font-family: 'Permanent Marker'
+  font-family: 'Permanent Marker';
+  color: hotpink; 
 }
 
 .bigwillypic {
   width: 10%;
   animation-name: zoom; 
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-direction:alternate; 
+  animation-direction:alternate;
   animation-delay: 10.2s;
+  border-style: groove;
+  border-color: aquamarine;
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {transform:scale(0)}; 
+    to   {transform:scale(1)};
+  
 }
 
-/*
 audio {
   display:none;
 }
-*/
+
 

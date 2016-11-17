@@ -7,12 +7,13 @@
     <link rel="stylesheet" type="text/css" href="mystyle.css"/>
     <script src="https://use.fontawesome.com/0be449bd4a.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Lato|Permanent+Marker" rel="stylesheet">
+    <script type="text/javascript" src="sound-mouseover.js"></script>
     <title>Brendan Peppler Internetz</title>
   </head>
   <body>
     
     <header>
-      <h1>Brendan Peppler Internetz</h1>
+      <h1 onmouseover="playclip();" >Brendan Peppler Internetz</h1>
       <img src="https://redditupvoted.files.wordpress.com/2015/10/dialup2.gif?w=1000&h=500&crop=1" alt="dialup-connection" class="dialup-connection">
     </header>
     
@@ -22,10 +23,10 @@
         Home</a></li>
         <li><a href="blog.html"><i class="fa fa-rss" aria-hidden="true"></i>
         Blog</a></li>
-        <li><a href="projects.html">
-        <i class="fa fa-suitcase" aria-hidden="true"></i>
+        <li><a href="projects.html"><i class="fa fa-suitcase" aria-hidden="true"></i>
         Projects</a></li>
-        <li><a href="willsmith.html">Will Smith</a></li></;o?>
+        <li><a href="willsmith.html"><i class="fa fa-music" aria-hidden="true"></i>
+        Will Smith</a></li>
         <li><a href="mailto:bfpepz@gmail.com?Subject=Hello%20Brendan!" target="_top"><i class="fa fa-reply" aria-hidden="true"></i>
         Electronic Mailing Service</a></li>
       </ul>
@@ -50,7 +51,17 @@
           </a></li>
           </ul>
       <p class="copyright"><em>&copy;Brendan Peppler, 2016.</em></p>
+      
+    
     </footer>
+      
+      <!--Tim Taylor Audio Tag-->
+
+      <audio>
+      <source src="click.mp3"></source>
+      <source src="click.ogg"></source>
+      </audio>
+      <div id="sounddiv"><bgsound id="sound"></div>
     
   </body>
   
