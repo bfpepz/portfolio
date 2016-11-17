@@ -20,6 +20,15 @@ ul {
   font-size: 110%;
 }
 
+header img {
+  height: auto; 
+  width: auto; 
+  max-width: 500px;
+  max-height: 300px;
+  transition-delay: 3s; 
+}
+
+
 header {
   width: 100%;
   font-family: 'Permanent Marker', cursive;
@@ -61,11 +70,48 @@ header {
   border: 4px;
 }
 
-.copyright {
-  font-size: 8px;
-}
-
 .blogdates {
   color: black;
   font-size: 120%;
 }
+
+.copyright {
+  font-size: 8px;
+}
+
+/* BIG WILLY STYLES */ 
+
+.bigwillybackground {
+  background-image: none;
+}
+
+#bigwillypic1 {
+  transform: rotate(360deg)
+}
+
+#bigwillyheader {
+  font-size: 200%;
+  text-align: center;
+  font-family: 'Permanent Marker'
+}
+
+.bigwillypic {
+  width: 10%;
+  animation-name: zoom; 
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate; 
+  animation-delay: 10.2s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/*
+audio {
+  display:none;
+}
+*/
+
