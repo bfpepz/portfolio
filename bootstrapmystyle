@@ -31,15 +31,9 @@ body {
     float: left;
     padding: 15px;
     border: 1px solid red;
-    border-style: none;
     content: "";
     clear: both;
     display: table;
-}
-
-.navbar navbar-default {
-    width: 100%; 
-    
 }
 
 ul {
@@ -48,7 +42,6 @@ ul {
   border: 0px;
   padding: 40px;
   font-size: 110%;
-  align-content: stretch;
 }
 
 header img {
@@ -101,7 +94,7 @@ h1 {
 -ms-transition: all 2s ease;
 }
 
-.timallenheader:hover {
+h1:hover {
   background-image: url(images/timtaylor.jpg);
   font-size: 600%; 
 }

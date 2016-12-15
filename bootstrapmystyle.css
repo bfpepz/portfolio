@@ -19,7 +19,6 @@
 body {
     background-blend-mode: color-burn;
     font-family: 'Cutive Mono', monospace;
-    background-image: url("images/jazzcup.jpg");
     opacity: 0.9;
     margin: 0px;
     border: 0px;
@@ -30,16 +29,14 @@ body {
     background-size: cover;
     float: left;
     padding: 15px;
-    border: 1px solid red;
-    border-style: none;
+    border: 1px;
     content: "";
     clear: both;
     display: table;
-}
+    background-color: #08C2CC;
 
-.navbar navbar-default {
-    width: 100%; 
-    
+nav {
+    width: 100%;
 }
 
 ul {
@@ -48,7 +45,6 @@ ul {
   border: 0px;
   padding: 40px;
   font-size: 110%;
-  align-content: stretch;
 }
 
 header img {
@@ -72,7 +68,12 @@ header {
   padding: 5rem;
 }
 
-
+nav {
+  width: 100%;
+  display: table;
+  clear: both;
+  
+}
 
 .primary  {
   background-color: rgb(132,255,255);
@@ -94,17 +95,6 @@ article:hover {
   font-size:110%; 
 } 
 
-h1 {
--webkit-transition: all 2s ease;
--moz-transition: all 2s ease;
--o-transition: all 2s ease;
--ms-transition: all 2s ease;
-}
-
-.timallenheader:hover {
-  background-image: url(images/timtaylor.jpg);
-  font-size: 600%; 
-}
 .secondary {
   background-color:hotpink;
   opacity: 0.9;
@@ -134,40 +124,5 @@ h1 {
   font-size: 8px;
 }
 
-/* BIG WILLY STYLES */ 
-
-.bigwillybackground {
-  background-image: url(images/willsmithbackground.jpg);
-  background-image: radial-gradient(circle);
-  
-}
-
-#bigwillyheader {
-  font-size: 250%;
-  text-align: center;
-  font-family: 'Permanent Marker';
-  color: hotpink; 
-}
-
-.bigwillypic {
-  width: 50%;
-  animation-name: zoom; 
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction:alternate;
-  animation-delay: 10.2s;
-  border-style: groove;
-  border-color: aquamarine;
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}; 
-    to   {transform:scale(1)};
-  
-}
-
-audio {
-  display:none;
-}
 
 
