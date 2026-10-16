@@ -1,0 +1,114 @@
+/* brendanpeppler.com — static rebuild */
+:root {
+  --bg: #fbfaf7;
+  --text: #1d1d1b;
+  --muted: #6b6a66;
+  --rule: #e4e1da;
+  --accent: #2f5d8a;
+  --max: 760px;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615;
+    --text: #ecebe7;
+    --muted: #a3a19b;
+    --rule: #2c2b29;
+    --accent: #8db6dd;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 16px; background: var(--text); color: var(--bg); padding: 8px 12px; z-index: 10; }
+
+/* header */
+.site-header {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 40px 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.site-nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; }
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.site-nav a:hover,
+.site-nav a[aria-current="page"] { color: var(--text); }
+.site-nav a[aria-current="page"] { border-bottom: 1px solid var(--text); }
+
+main { max-width: var(--max); margin: 0 auto; padding: 24px 20px 80px; }
+
+/* about */
+.about { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; padding-top: 24px; }
+.about img { border-radius: 4px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+.about .intro { font-style: italic; font-size: 1.15rem; }
+.about .intro p { margin: 0 0 1.1em; }
+.contact { list-style: none; padding: 0; margin: 0; }
+.contact li { margin: 4px 0; }
+.contact li::before { content: "> "; color: var(--muted); }
+.contact li.or { color: var(--muted); }
+.contact li.or::before { content: none; }
+@media (max-width: 640px) {
+  .about { grid-template-columns: 1fr; gap: 28px; }
+  .about img { max-width: 260px; }
+}
+
+/* resume */
+.page-title { font-family: var(--font-display); font-weight: 600; font-size: 2rem; margin: 8px 0 32px; }
+.section-label {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
+  margin: 48px 0 8px; padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+}
+.role { padding: 28px 0; border-bottom: 1px solid var(--rule); }
+.role:last-child { border-bottom: 0; }
+.role h3 { margin: 0; font-size: 1.15rem; font-weight: 600; }
+h3 .org { color: var(--muted); font-weight: 400; }
+.meta { font-style: italic; color: var(--muted); margin: 2px 0 16px; font-size: 0.95rem; }
+.role dl { margin: 0; }
+.role dt { font-weight: 600; margin-top: 14px; }
+.role dd { margin: 2px 0 0; }
+.edu { padding: 18px 0; }
+.edu h3 { margin: 0; font-size: 1.05rem; font-weight: 600; }
+
+/* portfolio */
+.gate { max-width: 420px; padding: 32px; border: 1px solid var(--rule); border-radius: 6px; }
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 28px; }
+.project a { color: inherit; text-decoration: none; }
+.project img { border-radius: 4px; aspect-ratio: 4 / 3; object-fit: cover; background: var(--rule); }
+.project h3 { margin: 12px 0 2px; font-size: 1.05rem; }
+.project p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.site-footer {
+  max-width: var(--max); margin: 0 auto; padding: 24px 20px 48px;
+  color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--rule);
+}
